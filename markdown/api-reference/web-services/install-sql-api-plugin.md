@@ -1,11 +1,19 @@
 ---
+<<<<<<< HEAD
 title: Install SQL API plugin on your ServiceNow instance
 description: Installing the SQL API on your instance enables secure, read-only access to your instance data from external applications. You can integrate your data with external tools and analytics platforms to enhance your reporting and data analysis capabilities.
 locale: en-us
+=======
+title: Install Live Connect on your ServiceNow instance
+description: Install Live Connect to enable secure, read-only access to your instance data from external applications.
+locale: en-us
+canonical_url: https://www.servicenow.com/docs/r/australia/api-reference/web-services/install-sql-api-plugin.html
+>>>>>>> refs/remotes/origin/australia
 release: australia
 product: Web Services
 classification: web-services
 topic_type: task
+<<<<<<< HEAD
 last_updated: "2026-03-12"
 reading_time_minutes: 1
 breadcrumb: [Configure, Access your ServiceNow data using SQL API, Additional integration resources, Web services, API implementation, API implementation and reference]
@@ -18,17 +26,39 @@ Installing the SQL API on your instance enables secure, read-only access to your
 ## Before you begin
 
 You must have an appropriate RaptorDB Pro entitlement to install the SQL API plugin.
+=======
+last_updated: "2026-09-10"
+reading_time_minutes: 1
+breadcrumb: [Configure, Access your ServiceNow data using Live Connect, Additional integration resources, Web services, API implementation, API implementation and reference]
+---
+
+# Install Live Connect on your ServiceNow instance
+
+Install Live Connect to enable secure, read-only access to your instance data from external applications.
+
+## Before you begin
+
+|Requirement|Details|
+|-----------|-------|
+|Entitlement|Check your entitlements to determine whether you have access to RaptorDB Professional v2.|
+|Platform release|At least Zurich Patch 8 or Australia Patch 2 releases.|
+>>>>>>> refs/remotes/origin/australia
 
 Role required: admin
 
 ## About this task
 
+<<<<<<< HEAD
 Install the SQL API plugin to enable the ODBC and JDBC drivers to connect to your ServiceNow instance.
+=======
+Installing Live Connect installs the SQL API plugin, which enables the ODBC and JDBC drivers to connect to your ServiceNow instance. BI tools and analytics platforms can then query the data to enhance their reporting and data analysis capabilities.
+>>>>>>> refs/remotes/origin/australia
 
 ## Procedure
 
 1.  Navigate to **All** &gt; **Application Manager**.
 
+<<<<<<< HEAD
 2.  Search for `SQL API` and select the **SQL API** tile.
 
 3.  Select **Install**.
@@ -52,4 +82,21 @@ Install the SQL API plugin to enable the ODBC and JDBC drivers to connect to you
 The SQL API plugin is installed on your ServiceNow instance. You can proceed to [Configure SQL API plugin on your ServiceNow instance](../task/configure-sql-api-overview.md) and create service accounts, set up access control lists, and define IP filter criteria.
 
 **Parent Topic:**[Configuring SQL API](configuring-sql-api.md)
+=======
+2.  Search for live connect and select the **Live Connect** tile.
+
+    The SQL API plugin \[com.glide.rest.sqlapiserver\], which is a unified installer for ODBC and JDBC server side plugins, is selected for download during this installation.
+
+3.  Select **Install** and review the installation instructions.
+
+    -   To install immediately, select **Install now**.
+    -   To schedule the installation, do the following:
+        1.  Select **Install later**.
+        2.  Set the **Start date** and **Start time**.
+        3.  Select **Schedule**.
+4.  Verify that the Live Connect plugin \(SQL API\) is installed successfully by selecting **View details**.
+
+
+**Parent Topic:**[Configuring Live Connect](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/api-reference/web-services/configuring-sql-api.md)
+>>>>>>> refs/remotes/origin/australia
 
